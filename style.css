@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0 10px;
+    background: rgb(0, 0, 0);
+    color:white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+.header{
+    height: 70px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.utils{
+    display: flex;
+}
+.change{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    border: 2px solid #232323;
+    border-radius: 75px;
+    padding: 8px 5px;
+}
+.menus{
+    display: flex;
+    align-items: center;
+    
+}
+.icons{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 7px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.items{
+    border: 2px solid #232323;
+}
+.degree{
+    margin: 0;
+    font-size: 20px;
+}
+.degree:hover{
+    background: rgba(143, 141, 141, 0.4)
+}
+.svg-icon-menus{
+    width: 50%;
+    height: 50%;
+}
+.celcius{
+    background: rgba(128, 128, 128, 0.3)
+}
+
+/* Editing left panel */
+.main{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    
+}
+#main-weather-logo{
+    padding: 10px;
+    width:200px;
+}
+.left-panel{
+    border: 2px solid #232323;
+    border-radius: 40px;
+    width: 720px;
+    padding: 15px;
+}
+.left-main{
+    display: flex;
+}
+.main-second{
+    width: 320px;
+    margin-top: 35px;
+}
+.main-third{
+    width:190px ;
+    display: flex;
+    justify-content:right;
+}
+.temp{
+    font-size: 40px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+.weather{
+    font-size: 20px;
+    font-weight: 400;
+}
+.location{
+    display: flex;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.left-highlight{
+    background: #181818;
+    border-radius: 30px;
+    margin-top: 10px;
+    height: 560px;
+}
+.content{
+    margin-left: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 30px;
+}
+.Highlight-box{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+}
+.box{
+    width: 195px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    gap: 10px;
+    background: #232323;
+    border-radius: 20px;
+}
+.box:hover{
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.25) 0px -12px 30px, rgba(255, 255, 255, 0.25) 0px 4px 6px, rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.25) 0px -3px 5px;
+}
+.SunImgCard{
+    width: 120px;
+    height: 100px;
+}
+.SunCard{
+    font-size:medium;
+    font-weight: 500;
+}
+.TimeCard{
+    font-size: large;
+    font-weight: 300;
+}
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+}
+.quantity{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 600;
+}
+.extra-quantity{
+    display: flex;
+    font-weight: 400;
+    padding-left: 30px;
+    
+}
+.quantity-box{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 7px;
+}
+.unit{
+    font-size:  small;
+}
+/* Editing right panel */
+.right-panel{
+    width: 720px;
+    width: 720px;
+}
+.forecasts{
+    border: 2px solid #232323;
+    border-radius: 40px;
+    padding: 15px;
+}
+.right-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.head-text{
+    font-size: 25px;
+    font-weight: 400;
+}
+.forecast-panel{
+    display: flex;
+    gap: 20px;
+}
+.forecast-cards{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #232323;
+    border-radius: 25px;
+    row-gap: 15px;
+}
+.first-card{
+    background: #181818;
+}
+.head-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.forecast-weather > img:first-child{
+    width: 75px;
+    height: 85px;
+}
+
