@@ -185,8 +185,11 @@ svg{
 }
 /* Editing right panel */
 .right-panel{
+    display: flex;
+    flex-direction: column;
     width: 720px;
-    width: 720px;
+    
+    
 }
 .forecasts{
     border: 2px solid #232323;
@@ -205,10 +208,12 @@ svg{
 }
 .forecast-panel{
     display: flex;
+    margin-top: 30px;
     gap: 20px;
 }
 .forecast-cards{
     width: 100px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -216,6 +221,7 @@ svg{
     border: 2px solid #232323;
     border-radius: 25px;
     row-gap: 15px;
+    margin-bottom: 10px;
 }
 .first-card{
     background: #181818;
@@ -229,4 +235,160 @@ svg{
     width: 75px;
     height: 85px;
 }
+.others{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.rainfall-tab{
+    width: 280px;
+    /* height: 460px; */
+    border: 2px solid #232323;
+    background: #181818;
+    border-radius: 30px;
+}
+.rainfall-title{
+    padding: 20px;
+    font-weight: bolder;
+    font-size: x-large;
+}
+.rainfall-chart{
+    padding-top: 10px;
+    padding-left: 30px;
+    position: relative;
+    height: 220px;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 2em;
+    position: absolute;
+}
+.sun-circle{
+    background-color: orange;
+    width: 150px; /* Adjust size */
+    height: 150px; /* Adjust size */
+    z-index: 1;
+    background: #FF701F;
+}
+.rain-circle{
+    width: 120px; /* Adjust size */
+    height: 120px; /* Adjust size */
+    left: 130px; /* Positioning */
+    top: 70px; /* Positioning */
+    z-index: 2;
+    background: #2D83E3;
+}
+.percentage {
+    position: relative;
+    font-weight: 400;
+    font-size: 1em;
+}
 
+.rainfall-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.rain-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background: #232323;
+    
+}
+.footer-box{
+    width: 15px;
+    height: 15px;
+    
+}
+.sun-box{
+    background: #FF701F;
+}
+.rain-box{
+    background: #2D83E3;
+}
+.box-text{
+    font-weight: 480;
+}
+
+/* Editing extra tab */
+.extra-tab{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 420px;
+}
+.extra-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+.extra-title{
+    font-size: 1.8em;
+    font-weight: 500;
+}
+.more{
+    font-size: smaller;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.other-card-panel{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.other-card{
+    width:380px;
+    height: 80px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+.other-card:hover{
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.card1{
+    background-image: url(images/mountain.jpg);
+    background-size: cover;
+    /* filter: brightness(50%); */
+}
+.card2{
+    background-image: url(images/cloud-view.jpg);
+    background-size: cover;
+    /* filter: brightness(50%); */
+}
+.card3{
+    background-image: url(images/city.jpg);
+    background-size: cover;
+    /* filter: brightness(50%); */
+}
+
+.country-place{
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.country-temp{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
