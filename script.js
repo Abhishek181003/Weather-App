@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 const APIKey = "Your API Key";
 const weatherApiUrl = 'https://api.openweathermap.org/data/2.5/weather';
@@ -77,3 +78,7 @@ document.getElementById('main-search').addEventListener('click', function () {
 window.onload = function () {
     fetchWeather("Greater Noida");
 };
+=======
+const APIKey ;
+const APIUrl ;
+>>>>>>> 506910b97e10676fdcf8e4bc8d0f091874e12ca3
