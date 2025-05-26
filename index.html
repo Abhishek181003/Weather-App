@@ -120,7 +120,7 @@
                                         stroke-linejoin="round"></path>
                                 </g>
                             </svg></div>
-                        <div>Greater Noida, Uttar Pradesh</div>
+                        <div id="location-text">Greater Noida, Uttar Pradesh</div>
                     </div>
                 </div>
                 <div class="main-third">
@@ -157,7 +157,7 @@
                     <div class="box sunrise" style="align-items: center;">
                         <img class="SunImgCard" src="Animations/sunrise.gif" alt="Sunrise">
                         <div class="SunCard">Sunrise</div>
-                        <div class="TimeCard">6:41 AM</div>
+                        <div class="TimeCard" id="sunrise-timecard">6:41 AM</div>
                     </div>
                     <div class="box wind">
                         <div class="status">
@@ -175,8 +175,8 @@
                         </div>
                         <div class="quantity">
                             <div class="quantity-box">
-                                <div>7.9</div>
-                                <div class="unit">km/h</div>
+                                <div id="wind-text-box">7.9</div>
+                                <div class="unit">m/s</div>
                             </div>
                         </div>
                         <div class="extra-quantity">
@@ -201,8 +201,8 @@
                             <p>Humidity</p>
                         </div>
                         <div class="quantity">
-                            <div class="quantity-box">
-                                <div>85</div>
+                            <div class="quantity-box" >
+                                <div id="humidity-text-box">85</div>
                                 <div class="unit">%</div>
                             </div>
                         </div>
@@ -215,7 +215,7 @@
                     <div class="box sunset" style="align-items: center;">
                         <img class="SunImgCard" src="Animations/sunset.gif" alt="Sunrise">
                         <div class="SunCard">Sunset</div>
-                        <div class="TimeCard">6:35 PM</div>
+                        <div class="TimeCard" id="sunset-timecard">6:35 PM</div>
                     </div>
                     <div class="box UV-index">
                         <div class="status">
@@ -252,7 +252,7 @@
                             <p>UV Index</p>
                         </div>
                         <div class="quantity">
-                            <div class="quantity-box">
+                            <div class="quantity-box" >
                                 <div>4</div>
                                 <div class="unit">UV</div>
                             </div>
@@ -277,7 +277,7 @@
                         </div>
                         <div class="quantity">
                             <div class="quantity-box">
-                                <div>5.6</div>
+                                <div id="visibility-text-box">5.6</div>
                                 <div class="unit">%</div>
                             </div>
                         </div>
@@ -485,5 +485,7 @@
     <footer>
         All rights reserved by WeatherApp 2025
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
