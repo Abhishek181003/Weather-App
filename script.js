@@ -1,7 +1,7 @@
-<<<<<<< HEAD
 
-const APIKey = "Your API Key";
+const APIKey = "7a51ce59284f8360730383dbb5aa9311";
 const weatherApiUrl = 'https://api.openweathermap.org/data/2.5/weather';
+
 
 // Function to fetch weather data for a given city
 function fetchWeather(city) {
@@ -28,11 +28,11 @@ function updateWeatherUI(data) {
     const location = data.name + ', ' + data.sys.country;
     const sunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
     const sunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
-    const uvIndex = data.uvi; // Assuming the API provides UV index
+    // const uvIndex = data.current.uvi; // Assuming the API provides UV index
     const windStatus = `${data.wind.speed}`;
     const humidity = `${data.main.humidity}`;
     const visibility = `${(data.visibility / 1000).toFixed(1)}`; // Convert visibility to km
-    console.log(uvIndex)
+    console.log(data)
 
     document.querySelector('.temp').innerText = `${temp}°C`;
     document.querySelector('.weather').innerText = weather.charAt(0).toUpperCase() + weather.slice(1);
@@ -78,7 +78,3 @@ document.getElementById('main-search').addEventListener('click', function () {
 window.onload = function () {
     fetchWeather("Greater Noida");
 };
-=======
-const APIKey ;
-const APIUrl ;
->>>>>>> 506910b97e10676fdcf8e4bc8d0f091874e12ca3
